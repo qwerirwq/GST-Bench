@@ -1,20 +1,20 @@
 {
   "task": "Object_Localization_Egocentric_Direction_visual",
-  "uid": "scene2_Object_Localization_Egocentric_Direction_visual_bookcase_owvfik_2_pos_0_orient_5_video_5",
+  "uid": "scene2_Object_Localization_Egocentric_Direction_visual_armchair_vzhxuf_0_pos_10_orient_4_video_3",
   "scene": "scene_2",
-  "answer": "-177",
+  "answer": "-134",
   "texts": [
     "This is the exploration video of you in the entire scene earlier.",
     "Your current view is :",
     "In which direction relative to you is the object marked with a red box in the video? Taking your current viewing direction as 0°, with left turns being positive, please only give the angle as an integer between –180° and 180°, without the \"°\" symbol."
   ],
-  "source_video_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/videos/scene_2/video5_obj_bookcase_owvfik_2.mp4",
-  "copied_video_path": "video5_obj_bookcase_owvfik_2.mp4",
+  "source_video_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/videos/scene_2/video3_obj_armchair_vzhxuf_0.mp4",
+  "copied_video_path": "video3_obj_armchair_vzhxuf_0.mp4",
   "images": [
     {
       "index": 1,
-      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/image/1_7.jpg",
-      "copied_path": "image_01_1_7.jpg"
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/image/19_14.jpg",
+      "copied_path": "image_01_19_14.jpg"
     }
   ]
 }

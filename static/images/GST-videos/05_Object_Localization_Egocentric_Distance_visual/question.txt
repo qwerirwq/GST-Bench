@@ -1,8 +1,8 @@
 Task: Object_Localization_Egocentric_Distance_visual
-UID: scene3_Object_Localization_Egocentric_Distance_visual_carpet_ctclvd_0_pos_1_orient_10_video_4
-Scene: scene_3
-Answer: 1.3
-Video: video4_obj_carpet_ctclvd_0.mp4
+UID: scene1_Object_Localization_Egocentric_Distance_visual_armchair_bslhmj_0_pos_2_orient_0_video_5
+Scene: scene_1
+Answer: 13.2
+Video: video5_obj_armchair_bslhmj_0.mp4
 
 Texts:
 [1] This is the exploration video of you in the entire scene earlier.
@@ -10,4 +10,4 @@ Texts:
 [3] How far in meters is the object marked with a red box in the video from you? Answer only with a number rounded to one decimal place, without the "m" suffix.
 
 Images:
-[1] image_01_orientation_10_1.png
+[1] image_01_orientation_0.png

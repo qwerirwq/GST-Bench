@@ -1,8 +1,8 @@
 Task: Object_Localization_Egocentric_Direction_visual
-UID: scene2_Object_Localization_Egocentric_Direction_visual_bookcase_owvfik_2_pos_0_orient_5_video_5
+UID: scene2_Object_Localization_Egocentric_Direction_visual_armchair_vzhxuf_0_pos_10_orient_4_video_3
 Scene: scene_2
-Answer: -177
-Video: video5_obj_bookcase_owvfik_2.mp4
+Answer: -134
+Video: video3_obj_armchair_vzhxuf_0.mp4
 
 Texts:
 [1] This is the exploration video of you in the entire scene earlier.
@@ -10,4 +10,4 @@ Texts:
 [3] In which direction relative to you is the object marked with a red box in the video? Taking your current viewing direction as 0°, with left turns being positive, please only give the angle as an integer between –180° and 180°, without the "°" symbol.
 
 Images:
-[1] image_01_1_7.jpg
+[1] image_01_19_14.jpg
