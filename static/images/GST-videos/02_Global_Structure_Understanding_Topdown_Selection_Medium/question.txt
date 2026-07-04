@@ -1,0 +1,22 @@
+Task: Global_Structure_Understanding_Topdown_Selection_Medium
+UID: scene16_Topdown_Selection_Medium_video_1
+Scene: scene_16
+Answer: C
+Video: video1.mp4
+
+Texts:
+[1] This is the exploration video of you in the entire scene earlier:
+[2] Among the four images below, which one is closest to a top-down view of the entire scene? Please directly answer with the letter of the correct option.
+A.
+[3] 
+B.
+[4] 
+C.
+[5] 
+D.
+
+Images:
+[1] image_01_scene16_QA_topdown_video_1_image_0.jpg
+[2] image_02_scene16_QA_topdown_video_1_image_1.jpg
+[3] image_03_scene16_QA_topdown_video_1_image_2.jpg
+[4] image_04_scene16_QA_topdown_video_1_image_3.jpg

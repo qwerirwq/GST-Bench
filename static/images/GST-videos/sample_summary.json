@@ -1,0 +1,56 @@
+[
+  {
+    "folder": "static/images/GST-videos/01_Global_Structure_Understanding_Topdown_Selection_Easy",
+    "task": "Global_Structure_Understanding_Topdown_Selection_Easy",
+    "uid": "scene46_Topdown_Selection_Easy_video_0",
+    "scene": "scene_46",
+    "answer": "C",
+    "video": "video0.mp4",
+    "image_count": 4
+  },
+  {
+    "folder": "static/images/GST-videos/02_Global_Structure_Understanding_Topdown_Selection_Medium",
+    "task": "Global_Structure_Understanding_Topdown_Selection_Medium",
+    "uid": "scene16_Topdown_Selection_Medium_video_1",
+    "scene": "scene_16",
+    "answer": "C",
+    "video": "video1.mp4",
+    "image_count": 4
+  },
+  {
+    "folder": "static/images/GST-videos/03_Global_Structure_Understanding_Trajection_Selection",
+    "task": "Global_Structure_Understanding_Trajection_Selection",
+    "uid": "scene1_Trajection_Selection_traject_9_4",
+    "scene": "scene_1",
+    "answer": "B",
+    "video": "sub_trajectory_4.mp4",
+    "image_count": 4
+  },
+  {
+    "folder": "static/images/GST-videos/04_Object_Localization_Egocentric_Direction_visual",
+    "task": "Object_Localization_Egocentric_Direction_visual",
+    "uid": "scene2_Object_Localization_Egocentric_Direction_visual_bookcase_owvfik_2_pos_0_orient_5_video_5",
+    "scene": "scene_2",
+    "answer": "-177",
+    "video": "video5_obj_bookcase_owvfik_2.mp4",
+    "image_count": 1
+  },
+  {
+    "folder": "static/images/GST-videos/05_Object_Localization_Egocentric_Distance_visual",
+    "task": "Object_Localization_Egocentric_Distance_visual",
+    "uid": "scene3_Object_Localization_Egocentric_Distance_visual_carpet_ctclvd_0_pos_1_orient_10_video_4",
+    "scene": "scene_3",
+    "answer": 1.3,
+    "video": "video4_obj_carpet_ctclvd_0.mp4",
+    "image_count": 1
+  },
+  {
+    "folder": "static/images/GST-videos/06_Self_Localization_Global_Position",
+    "task": "Self_Localization_Global_Position",
+    "uid": "scene0_Egocentric_Localization_Global_Position_pos_30_orient_8_video_1",
+    "scene": "scene_0",
+    "answer": "<point>323 292</point>",
+    "video": "video1.mp4",
+    "image_count": 2
+  }
+]

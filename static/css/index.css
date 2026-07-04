@@ -1,0 +1,117 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.hf-icon {
+    width: 1.35em;
+    height: 1.35em;
+    display: block;
+}
+
+.project-section .hero-body {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.project-copy {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.project-image {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-image-wide {
+  max-width: 900px;
+}
+
+.figure-caption {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left !important;
+}
+
+.rank-mark {
+  padding: 0 0.25em;
+  border-radius: 2px;
+}
+
+.rank-red {
+  background: #f6c5c5;
+}
+
+.rank-orange {
+  background: #f5d8b8;
+}
+
+.rank-yellow {
+  background: #fff0a8;
+}
+
+.insight-panel {
+  max-width: 900px;
+  margin: 1.75rem auto 0;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  background: #f3f5f8;
+  text-align: left;
+}
+
+.insight-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.insight-list li {
+  display: flex;
+  gap: 0.45rem;
+  margin: 0.35rem 0;
+  line-height: 1.55;
+}
+
+.insight-icon {
+  flex: 0 0 auto;
+}
+
+.disabled-link {
+  cursor: default;
+  pointer-events: none;
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}

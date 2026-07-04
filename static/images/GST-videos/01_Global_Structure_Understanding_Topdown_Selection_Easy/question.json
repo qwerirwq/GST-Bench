@@ -1,0 +1,37 @@
+{
+  "task": "Global_Structure_Understanding_Topdown_Selection_Easy",
+  "uid": "scene46_Topdown_Selection_Easy_video_0",
+  "scene": "scene_46",
+  "answer": "C",
+  "texts": [
+    "This is the exploration video of you in the entire scene earlier:",
+    "Among the four images below, which one is closest to a top-down view of the entire scene? Please directly answer with the letter of the correct option.\nA.",
+    "\nB.",
+    "\nC.",
+    "\nD."
+  ],
+  "source_video_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/videos/scene_46/video0.mp4",
+  "copied_video_path": "video0.mp4",
+  "images": [
+    {
+      "index": 1,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/images/school_geography.png",
+      "copied_path": "image_01_school_geography.png"
+    },
+    {
+      "index": 2,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/images/office_vendor_machine.png",
+      "copied_path": "image_02_office_vendor_machine.png"
+    },
+    {
+      "index": 3,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/images/school_biology.png",
+      "copied_path": "image_03_school_biology.png"
+    },
+    {
+      "index": 4,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/images/restaurant_asian.png",
+      "copied_path": "image_04_restaurant_asian.png"
+    }
+  ]
+}

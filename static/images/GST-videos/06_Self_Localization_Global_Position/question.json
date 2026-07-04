@@ -1,0 +1,26 @@
+{
+  "task": "Self_Localization_Global_Position",
+  "uid": "scene0_Egocentric_Localization_Global_Position_pos_30_orient_8_video_1",
+  "scene": "scene_0",
+  "answer": "<point>323 292</point>",
+  "texts": [
+    "This is the exploration video of you in the entire scene earlier:",
+    "Your current view is :",
+    "The top-down image of the scene is:",
+    "Where on the top-down image does your current location correspond to?\nPlease provide coordinates normalized to the range [0, 999], with the x-axis pointing to the right of the top-down image and the y-axis pointing to the bottom of the top-down image.\nPlease provide the answer directly in the format <point>x y</point>."
+  ],
+  "source_video_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/videos/scene_0/video1.mp4",
+  "copied_video_path": "video1.mp4",
+  "images": [
+    {
+      "index": 1,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/images/position_30_orientation_8.png",
+      "copied_path": "image_01_position_30_orientation_8.png"
+    },
+    {
+      "index": 2,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/images/topdown.png",
+      "copied_path": "image_02_topdown.png"
+    }
+  ]
+}

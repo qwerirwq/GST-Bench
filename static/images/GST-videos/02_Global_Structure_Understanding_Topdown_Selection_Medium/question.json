@@ -1,0 +1,37 @@
+{
+  "task": "Global_Structure_Understanding_Topdown_Selection_Medium",
+  "uid": "scene16_Topdown_Selection_Medium_video_1",
+  "scene": "scene_16",
+  "answer": "C",
+  "texts": [
+    "This is the exploration video of you in the entire scene earlier:",
+    "Among the four images below, which one is closest to a top-down view of the entire scene? Please directly answer with the letter of the correct option.\nA.",
+    "\nB.",
+    "\nC.",
+    "\nD."
+  ],
+  "source_video_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/videos/scene_16/video1.mp4",
+  "copied_video_path": "video1.mp4",
+  "images": [
+    {
+      "index": 1,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/images/scene16_QA_topdown_video_1_image_0.jpg",
+      "copied_path": "image_01_scene16_QA_topdown_video_1_image_0.jpg"
+    },
+    {
+      "index": 2,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/images/scene16_QA_topdown_video_1_image_1.jpg",
+      "copied_path": "image_02_scene16_QA_topdown_video_1_image_1.jpg"
+    },
+    {
+      "index": 3,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/images/scene16_QA_topdown_video_1_image_2.jpg",
+      "copied_path": "image_03_scene16_QA_topdown_video_1_image_2.jpg"
+    },
+    {
+      "index": 4,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/images/scene16_QA_topdown_video_1_image_3.jpg",
+      "copied_path": "image_04_scene16_QA_topdown_video_1_image_3.jpg"
+    }
+  ]
+}

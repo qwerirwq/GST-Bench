@@ -1,0 +1,37 @@
+{
+  "task": "Global_Structure_Understanding_Trajection_Selection",
+  "uid": "scene1_Trajection_Selection_traject_9_4",
+  "scene": "scene_1",
+  "answer": "B",
+  "texts": [
+    "This is the exploration video in a section of the scene earlier:",
+    "Which of the four red trajectories on the top-down maps best matches the path shown in the video? Note that the blue dot marks the starting point of each trajectory. Please directly answer with the letter of the correct option.\nA.",
+    "\nB.",
+    "\nC.",
+    "\nD."
+  ],
+  "source_video_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/videos/scene_1/sub_trajectory_4.mp4",
+  "copied_video_path": "sub_trajectory_4.mp4",
+  "images": [
+    {
+      "index": 1,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/trajectory_8/sub_trajectory_9.png",
+      "copied_path": "image_01_sub_trajectory_9.png"
+    },
+    {
+      "index": 2,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/trajectory_9/sub_trajectory_4.png",
+      "copied_path": "image_02_sub_trajectory_4.png"
+    },
+    {
+      "index": 3,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/trajectory_4/sub_trajectory_6.png",
+      "copied_path": "image_03_sub_trajectory_6.png"
+    },
+    {
+      "index": 4,
+      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/trajectory_9/sub_trajectory_8.png",
+      "copied_path": "image_04_sub_trajectory_8.png"
+    }
+  ]
+}
