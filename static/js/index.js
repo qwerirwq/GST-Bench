@@ -167,6 +167,53 @@ document.addEventListener("DOMContentLoaded", function () {
       return cell;
     }
 
+    function interpolateColor(start, end, progress) {
+      return start.map(function (channel, index) {
+        return Math.round(channel + (end[index] - channel) * progress);
+      });
+    }
+
+    function scoreColor(score) {
+      var normalizedScore = Math.max(0, Math.min(score, 100)) / 100;
+      var lowColor = [232, 82, 82];
+      var middleColor = [72, 118, 232];
+      var highColor = [54, 179, 126];
+      var color;
+
+      if (normalizedScore <= 0.75) {
+        color = interpolateColor(lowColor, middleColor, normalizedScore / 0.75);
+      } else {
+        color = interpolateColor(middleColor, highColor, (normalizedScore - 0.75) / 0.25);
+      }
+
+      return "rgb(" + color.join(", ") + ")";
+    }
+
+    function appendVisualScoreCell(row, score) {
+      var boundedScore = Math.max(0, Math.min(score, 100));
+      var cell = document.createElement("td");
+      var visual = document.createElement("div");
+      var value = document.createElement("span");
+      var track = document.createElement("span");
+      var bar = document.createElement("span");
+
+      cell.className = "leaderboard-visual-score";
+      visual.className = "score-visual";
+      value.className = "score-visual-value";
+      value.textContent = score.toFixed(2);
+      track.className = "score-visual-track";
+      track.setAttribute("aria-hidden", "true");
+      bar.className = "score-visual-bar";
+      bar.style.width = boundedScore + "%";
+      bar.style.backgroundColor = scoreColor(boundedScore);
+
+      track.appendChild(bar);
+      visual.appendChild(value);
+      visual.appendChild(track);
+      cell.appendChild(visual);
+      row.appendChild(cell);
+    }
+
     function appendScoreHeader(row, label, metric) {
       var heading = appendCell(row, "th", label, []);
       heading.setAttribute("scope", "col");
@@ -215,7 +262,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       var scoreKey = task ? task.key : "avg";
       var models = view === "all" ? sortModels(data.models, "avg") : sortModels(data.models, scoreKey);
-      var averageRanks = createTopRankMap(data.models, "avg");
       var taskRanks = {};
       var headerRow = document.createElement("tr");
       var subtaskHeaderRow = null;
@@ -297,15 +343,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
           appendCell(row, "td", getScore(model, "avg").toFixed(2), ["leaderboard-score"]);
         } else {
-          var selectedRanks = task ? taskRanks[task.key] : averageRanks;
-          var selectedRank = selectedRanks[model.name];
-          var selectedClasses = ["leaderboard-score"];
-
-          if (typeof selectedRank === "number") {
-            selectedClasses.push(rankClasses[selectedRank]);
-          }
-
-          appendCell(row, "td", getScore(model, scoreKey).toFixed(2), selectedClasses);
+          appendVisualScoreCell(row, getScore(model, scoreKey));
         }
 
         appendTypeCell(row, model.type);
