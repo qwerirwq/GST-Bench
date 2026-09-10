@@ -35,7 +35,7 @@ Wei Li<sup>1,†</sup>
 
 ## 🔔 News
 
-- 🔥 **[2026-09]** We updated the evaluation results for GPT-6 Astra.
+- 🔥 **[2026-09]** We updated the evaluation results for GPT-6 Astra, GPT-5.5, Gemini-3.1-Pro, Seed2.1-Pro, and RynnBrain1.1-9B.
 - 🔥 **[2026-08]** We released our [paper](https://arxiv.org/pdf/2608.05747).
 
 ## Environment setup
@@ -202,13 +202,17 @@ Detailed scores for each task are available in the
 | --- | ---: |
 | 🥇 **GPT-6 Astra** | **83.26** |
 | 🥈 **Human Level (20 samples/task)** | **79.08** |
-| 🥉 **Gemini-3-Pro** | **42.68** |
+| 🥉 **GPT-5.5** | **54.96** |
+| Gemini-3.1-Pro | 54.53 |
+| Seed2.1-Pro | 45.82 |
+| Gemini-3-Pro | 42.68 |
 | Gemini-2.5-Pro | 40.95 |
 | GPT-5 | 40.85 |
 | Seed1.8 | 34.04 |
 | InternVL3.5-38B | 30.71 |
 | Qwen3-VL-32B | 30.43 |
 | GPT-4o | 30.33 |
+| RynnBrain1.1-9B | 29.60 |
 | Robix-32B | 29.26 |
 | Robix-7B | 29.06 |
 | Qwen3-VL-8B | 25.89 |

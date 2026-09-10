@@ -97,9 +97,19 @@ window.GST_BENCH_LEADERBOARD = {
       "scores": {"ed_v": 21.73, "edist_v": 25.35, "gp_v": 42.23, "ed_s": 22.11, "edist_s": 27.39, "gp_s": 43.67, "position": 37.47, "orientation": 16.89, "tds_easy": 98.15, "tds_medium": 82.73, "tds_hard": 52.25, "trajectory": 42.18, "avg": 42.68}
     },
     {
+      "name": "Gemini-3.1-Pro",
+      "type": "Proprietary",
+      "scores": {"ed_v": 31.55, "edist_v": 44.87, "gp_v": 51.15, "ed_s": 34.13, "edist_s": 39.47, "gp_s": 62.80, "position": 54.34, "orientation": 35.28, "tds_easy": 99.54, "tds_medium": 89.09, "tds_hard": 56.74, "trajectory": 55.45, "avg": 54.53}
+    },
+    {
       "name": "GPT-5",
       "type": "Proprietary",
       "scores": {"ed_v": 27.98, "edist_v": 27.35, "gp_v": 34.28, "ed_s": 31.09, "edist_s": 27.39, "gp_s": 43.23, "position": 22.33, "orientation": 16.74, "tds_easy": 97.69, "tds_medium": 79.55, "tds_hard": 43.26, "trajectory": 39.34, "avg": 40.85}
+    },
+    {
+      "name": "GPT-5.5",
+      "type": "Proprietary",
+      "scores": {"ed_v": 37.65, "edist_v": 35.61, "gp_v": 54.28, "ed_s": 39.90, "edist_s": 36.55, "gp_s": 53.54, "position": 53.02, "orientation": 45.59, "tds_easy": 99.07, "tds_medium": 87.27, "tds_hard": 60.67, "trajectory": 56.40, "avg": 54.96}
     },
     {
       "name": "GPT-4o",
@@ -110,6 +120,11 @@ window.GST_BENCH_LEADERBOARD = {
       "name": "Seed1.8",
       "type": "Proprietary",
       "scores": {"ed_v": 16.37, "edist_v": 12.43, "gp_v": 27.96, "ed_s": 20.35, "edist_s": 13.32, "gp_s": 36.07, "position": 28.45, "orientation": 17.79, "tds_easy": 99.07, "tds_medium": 67.27, "tds_hard": 37.64, "trajectory": 31.75, "avg": 34.04}
+    },
+    {
+      "name": "Seed2.1-Pro",
+      "type": "Proprietary",
+      "scores": {"ed_v": 31.55, "edist_v": 25.74, "gp_v": 37.70, "ed_s": 35.74, "edist_s": 34.87, "gp_s": 44.37, "position": 34.34, "orientation": 23.77, "tds_easy": 100.00, "tds_medium": 87.73, "tds_hard": 49.44, "trajectory": 44.55, "avg": 45.82}
     },
     {
       "name": "GPT-6 Astra",
@@ -190,6 +205,11 @@ window.GST_BENCH_LEADERBOARD = {
       "name": "RoboBrain2.5-8B",
       "type": "Embodied-understanding",
       "scores": {"ed_v": 20.24, "edist_v": 10.39, "gp_v": 14.04, "ed_s": 19.23, "edist_s": 11.28, "gp_s": 14.06, "position": 20.31, "orientation": 16.74, "tds_easy": 80.56, "tds_medium": 37.27, "tds_hard": 26.97, "trajectory": 24.17, "avg": 24.61}
+    },
+    {
+      "name": "RynnBrain1.1-9B",
+      "type": "Embodied-understanding",
+      "scores": {"ed_v": 21.43, "edist_v": 24.09, "gp_v": 20.00, "ed_s": 19.07, "edist_s": 15.71, "gp_s": 22.09, "position": 22.95, "orientation": 17.19, "tds_easy": 83.80, "tds_medium": 44.09, "tds_hard": 29.21, "trajectory": 35.55, "avg": 29.60}
     },
     {
       "name": "Robix-7B",
