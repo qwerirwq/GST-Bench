@@ -1,8 +1,42 @@
-# GST-Bench
+<div align="center">
 
-**GST-Bench: Can VLMs Develop Global Spatial Awareness from Video?**
+<h1>GST-Bench: Can VLMs Develop Global Spatial Awareness from Video?</h1>
+
+<p>
+Qifeng Zhang<sup>1,2,*</sup>, Kaixiang Huang<sup>2</sup>,
+Heng Dong<sup>1</sup>, Huang Fang<sup>1</sup>,
+Junting Chen<sup>1,3,*</sup>, Junjie Zhu<sup>2</sup>,
+Yonghang Chen<sup>2</sup>, Zhiyu Zhang<sup>2</sup>,
+Wei Li<sup>1,†</sup>
+</p>
+
+<p>
+<sup>1</sup>ByteDance Seed&nbsp;&nbsp;&nbsp;
+<sup>2</sup>Zhejiang University&nbsp;&nbsp;&nbsp;
+<sup>3</sup>National University of Singapore
+</p>
+
+<p>
+<sup>*</sup>Work done at ByteDance Seed&nbsp;&nbsp;&nbsp;
+<sup>†</sup>Corresponding author
+</p>
+
+<p>
+<a href="https://qwerirwq.github.io/GST-Bench/"><img src="https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&amp;logoColor=white" alt="Project Page"></a>
+<a href="https://huggingface.co/datasets/qwerirwq/GST-Bench"><img src="https://img.shields.io/badge/%F0%9F%A4%97-Hugging_Face-FFD21E" alt="Hugging Face"></a>
+<a href="https://arxiv.org/pdf/2608.05747"><img src="https://img.shields.io/badge/arXiv-2608.05747-b31b1b.svg?logo=arxiv&amp;logoColor=white" alt="arXiv"></a>
+</p>
+
+<p align="left"><sub>The dataset and evaluation code are expected to be released in October 2026.</sub></p>
+
+</div>
 
 ![GST-Bench overview](static/images/GST-images/intro.png)
+
+## 🔔 News
+
+- 🔥 **[2026-09]** We updated the evaluation results for GPT-6 Astra.
+- 🔥 **[2026-08]** We released our [paper](https://arxiv.org/pdf/2608.05747).
 
 ## Environment setup
 
@@ -11,18 +45,20 @@ git clone https://github.com/qwerirwq/GST-Bench.git
 cd GST-Bench
 ```
 
-Dependencies may differ or conflict across model families. Please refer to the
-official model links below and follow the corresponding installation
-instructions to set up the environment for the model you want to evaluate.
-
 ## Model support
+
+### Installation
+
+Each model family has its own runtime and dependency requirements, which may
+differ or conflict across models. We recommend creating a separate environment
+for the model you want to evaluate. Before running inference, follow the
+installation instructions on the corresponding official model page linked
+below.
 
 ### Open-source models
 
 This repository supports inference with the following open-source model
-families. Before running inference, install the required dependencies by
-following the setup instructions provided by each model's official repository
-or model page.
+families:
 
 - [Qwen3-VL](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
 - [InternVL3.5](https://huggingface.co/OpenGVLab/InternVL3_5-8B)
@@ -156,3 +192,36 @@ python3 evaluation/Object_Localization_Egocentric_Direction_visual.py \
 > running the evaluation scripts, we recommend using an LLM to extract and
 > normalize the final answer stored in each `pred` field. Keep the answer
 > semantics unchanged, and do not modify `gt` or other sample metadata.
+
+## 🏆 GST-Bench Leaderboard
+
+Detailed scores for each task are available in the
+[project-page leaderboard](https://qwerirwq.github.io/GST-Bench/#leaderboard).
+
+| Model | Avg. (%) |
+| --- | ---: |
+| 🥇 **GPT-6 Astra** | **83.26** |
+| 🥈 **Human Level (20 samples/task)** | **79.08** |
+| 🥉 **Gemini-3-Pro** | **42.68** |
+| Gemini-2.5-Pro | 40.95 |
+| GPT-5 | 40.85 |
+| Seed1.8 | 34.04 |
+| InternVL3.5-38B | 30.71 |
+| Qwen3-VL-32B | 30.43 |
+| GPT-4o | 30.33 |
+| Robix-32B | 29.26 |
+| Robix-7B | 29.06 |
+| Qwen3-VL-8B | 25.89 |
+| RoboBrain2.5-8B | 24.61 |
+| Qwen3-VL-4B | 23.96 |
+| NVILA-8B | 23.64 |
+| InternVL3.5-8B | 22.99 |
+| Qwen3-VL-2B | 22.64 |
+| Cosmos-Reason2-8B | 21.64 |
+| LLaVA-OV-1.5-4B | 21.10 |
+| NVILA-15B | 21.10 |
+| Random Guessing | 20.01 |
+| Cosmos-Reason2-2B | 19.99 |
+| InternVL3.5-4B | 19.83 |
+| InternVL3.5-2B | 19.72 |
+| LLaVA-OV-1.5-8B | 19.58 |

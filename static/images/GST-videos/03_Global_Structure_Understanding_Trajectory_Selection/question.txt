@@ -1,5 +1,5 @@
-Task: Global_Structure_Understanding_Trajection_Selection
-UID: scene1_Trajection_Selection_traject_9_4
+Task: Global_Structure_Understanding_Trajectory_Selection
+UID: scene1_Trajectory_Selection_traject_9_4
 Scene: scene_1
 Answer: B
 Video: sub_trajectory_4.mp4
@@ -8,11 +8,11 @@ Texts:
 [1] This is the exploration video in a section of the scene earlier:
 [2] Which of the four red trajectories on the top-down maps best matches the path shown in the video? Note that the blue dot marks the starting point of each trajectory. Please directly answer with the letter of the correct option.
 A.
-[3] 
+[3]
 B.
-[4] 
+[4]
 C.
-[5] 
+[5]
 D.
 
 Images:

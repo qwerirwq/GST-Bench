@@ -1,4 +1,4 @@
-      
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,6 +37,7 @@
   <link rel="stylesheet" href="static/css/index.css">
 
   <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/data/leaderboard.js"></script>
   <script defer src="static/js/index.js"></script>
 </head>
 <body>
@@ -91,7 +92,7 @@
                     <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Corresponding authors</small></span>
                     <span class="eql-cntrb">
                       <small><br>
-                        <strong>Correspondence:</strong> 
+                        <strong>Correspondence:</strong>
                         <a href="mailto:liwei.85@bytedance.com">liwei.85@bytedance.com</a>
                       </small>
                     </span>
@@ -102,7 +103,7 @@
               <div class="publication-links">
                 <!-- Local PDF link -->
                 <span class="link-block">
-                  <a href="static/pdfs/gst-bench.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <a href="static/pdfs/gst-bench.pdf" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -110,27 +111,37 @@
                   </a>
                 </span>
 
-            <!-- ArXiv abstract link -->
+            <!-- arXiv link -->
             <span class="link-block">
-              <a class="external-link button is-normal is-rounded is-dark disabled-link" aria-disabled="true" title="Upload after internal approval">
+              <a href="https://arxiv.org/pdf/2608.05747" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="ai ai-arxiv"></i>
                 </span>
-                <span>Internal Approval Pending</span>
+                <span>arXiv</span>
               </a>
             </span>
 
             <!-- Hugging Face link -->
             <span class="link-block">
-              <a class="external-link button is-normal is-rounded is-dark disabled-link" aria-disabled="true" title="Release after internal approval">
+              <a href="https://huggingface.co/datasets/qwerirwq/GST-Bench" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <img class="hf-icon" src="static/images/huggingface.svg" alt="" aria-hidden="true">
                 </span>
-                <span>Internal Approval Pending</span>
+                <span>Hugging Face</span>
               </a>
             </span>
 
-                          
+            <!-- GitHub link -->
+            <span class="link-block">
+              <a href="https://github.com/qwerirwq/GST-Bench" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </span>
+
+
             </div>
           </div>
         </div>
@@ -220,25 +231,25 @@
             <div class="example-layout">
               <div class="example-video">
                 <video controls muted playsinline preload="metadata">
-                  <source src="static/images/GST-videos/03_Global_Structure_Understanding_Trajection_Selection/sub_trajectory_4.mp4" type="video/mp4">
+                  <source src="static/images/GST-videos/03_Global_Structure_Understanding_Trajectory_Selection/sub_trajectory_4.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="example-images option-grid">
                 <figure>
                   <span>A</span>
-                  <img src="static/images/GST-videos/03_Global_Structure_Understanding_Trajection_Selection/image_01_sub_trajectory_9.png" alt="Trajectory option A">
+                  <img src="static/images/GST-videos/03_Global_Structure_Understanding_Trajectory_Selection/image_01_sub_trajectory_9.png" alt="Trajectory option A">
                 </figure>
                 <figure>
                   <span>B</span>
-                  <img src="static/images/GST-videos/03_Global_Structure_Understanding_Trajection_Selection/image_02_sub_trajectory_4.png" alt="Trajectory option B">
+                  <img src="static/images/GST-videos/03_Global_Structure_Understanding_Trajectory_Selection/image_02_sub_trajectory_4.png" alt="Trajectory option B">
                 </figure>
                 <figure>
                   <span>C</span>
-                  <img src="static/images/GST-videos/03_Global_Structure_Understanding_Trajection_Selection/image_03_sub_trajectory_6.png" alt="Trajectory option C">
+                  <img src="static/images/GST-videos/03_Global_Structure_Understanding_Trajectory_Selection/image_03_sub_trajectory_6.png" alt="Trajectory option C">
                 </figure>
                 <figure>
                   <span>D</span>
-                  <img src="static/images/GST-videos/03_Global_Structure_Understanding_Trajection_Selection/image_04_sub_trajectory_8.png" alt="Trajectory option D">
+                  <img src="static/images/GST-videos/03_Global_Structure_Understanding_Trajectory_Selection/image_04_sub_trajectory_8.png" alt="Trajectory option D">
                 </figure>
               </div>
             </div>
@@ -414,36 +425,51 @@
   </div>
 </section>
 
-<section class="hero is-small project-section">
+<section class="hero is-small project-section" id="leaderboard">
   <div class="hero-body">
     <div class="container">
       <div class="container has-text-centered">
-        <h2 class="title is-3">Benchmark Results</h2>
+        <h2 class="title is-3">Leaderboard</h2>
 
-        <div class="project-copy">
-          We evaluate 22 state-of-the-art VLMs across proprietary, open-source, and embodied-understanding model families. GST-Bench exposes a large human-model gap: the strongest zero-shot model, Gemini-3-Pro, reaches 42.68, while the human baseline reaches 79.08.
+        <p class="leaderboard-intro">
+          Select the average score, the complete task breakdown, or an individual subtask. Rankings update automatically for the selected view.
+        </p>
+
+        <div class="leaderboard-controls">
+          <label class="is-sr-only" for="leaderboard-view">Leaderboard view</label>
+          <div class="select is-medium leaderboard-select">
+            <select id="leaderboard-view" aria-label="Select leaderboard view">
+              <option value="avg">Avg.</option>
+              <option value="all">All Tasks</option>
+            </select>
+          </div>
         </div>
 
-        <br>
-
-        <img src="static/images/GST-images/table_main_body.png"
-            alt="Performance of evaluated models on GST-Bench"
-            class="project-image">
-
-        <h2 class="subtitle has-text-centered is-size-6 figure-caption">
-          <br>
-          <strong>Table 1.</strong> Performance of various models on GST-Bench across three core competencies: <strong>Object Localization</strong>, <strong>Self Localization</strong>, and <strong>Scene Structure Understanding</strong>. The <strong>Avg.</strong> is the arithmetic mean of all 12 subtask scores. The highest, second-highest, and third-highest scores in each column are marked in <span class="rank-mark rank-red">light red</span>, <span class="rank-mark rank-orange">light orange</span>, and <span class="rank-mark rank-yellow">light yellow</span>, respectively, excluding Qwen3-VL-8B (fine-tuned), which is fine-tuned on our proposed training set GST-Train. ED = Ego. Direction, EDist = Ego. Distance, GP = Global Position, Pos = Top-Down Position, Ori = Top-Down Orientation, TDS = Top-Down Selection, Traj = Trajectory Selection. <sub>v</sub> / <sub>s</sub> = visual / semantic modality.
-        </h2>
-
-        <div class="insight-panel">
-          <h2 class="title is-5">Key Findings</h2>
-          <ul class="insight-list">
-            <li><span class="insight-icon">🌟</span><span><strong>Global spatial awareness remains difficult.</strong> Even the best zero-shot model trails humans by 36.4 points on average.</span></li>
-            <li><span class="insight-icon">🌟</span><span><strong>Open-source models are substantially behind.</strong> The strongest open-source zero-shot model remains around 30 points, with many models close to random guessing.</span></li>
-            <li><span class="insight-icon">🌟</span><span><strong>Targeted supervision helps.</strong> Fine-tuning Qwen3-VL-8B on GST-Train improves the average score from 25.89 to 53.52, surpassing all zero-shot models evaluated here.</span></li>
-          </ul>
+        <div id="leaderboard-all-details" class="leaderboard-details" hidden>
+          <p>
+            <strong>Abbreviations:</strong>
+            ED = Egocentric Direction, EDist = Egocentric Distance, GP = Global Position,
+            Pos = Self Position, Ori = Self Orientation, TDS = Top-Down Selection, and Traj = Trajectory Selection.
+            Subscripts <em>v</em> and <em>s</em> denote visual and semantic variants.
+          </p>
+          <div class="leaderboard-legend" aria-label="Top-three score colors">
+            <span><span class="legend-swatch rank-red"></span>1st</span>
+            <span><span class="legend-swatch rank-orange"></span>2nd</span>
+            <span><span class="legend-swatch rank-yellow"></span>3rd</span>
+          </div>
         </div>
 
+        <div class="leaderboard-table-wrap">
+          <table class="leaderboard-table" id="leaderboard-table">
+            <caption class="is-sr-only">GST-Bench model leaderboard</caption>
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p id="leaderboard-status" class="leaderboard-status" role="status" aria-live="polite">
+          Loading leaderboard data&hellip;
+        </p>
+        <div id="leaderboard-data"></div>
       </div>
     </div>
   </div>
@@ -489,7 +515,13 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>BibTeX will be available after internal approval and public release.</code></pre>
+    <pre><code>@article{zhang2026gstbench,
+  title={GST-Bench: Can VLMs Develop Global Spatial Awareness from Video?},
+  author={Zhang, Qifeng and Huang, Kaixiang and Dong, Heng and Fang, Huang and Chen, Junting and Zhu, Junjie and Chen, Yonghang and Zhang, Zhiyu and Li, Wei},
+  journal={arXiv preprint arXiv:2608.05747},
+  year={2026},
+  url={https://arxiv.org/abs/2608.05747}
+}</code></pre>
   </div>
 </section>
 <!--End BibTex citation -->
@@ -514,12 +546,10 @@
 </footer> -->
 
 <!-- Statcounter tracking code -->
-  
+
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
 
   </body>
   </html>
-
-    
