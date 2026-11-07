@@ -8,11 +8,11 @@ Texts:
 [1] This is the exploration video of you in the entire scene earlier:
 [2] Among the four images below, which one is closest to a top-down view of the entire scene? Please directly answer with the letter of the correct option.
 A.
-[3] 
+[3]
 B.
-[4] 
+[4]
 C.
-[5] 
+[5]
 D.
 
 Images:

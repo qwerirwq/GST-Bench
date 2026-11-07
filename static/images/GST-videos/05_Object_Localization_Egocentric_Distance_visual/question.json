@@ -8,12 +8,12 @@
     "Your current view is :",
     "How far in meters is the object marked with a red box in the video from you? Answer only with a number rounded to one decimal place, without the \"m\" suffix."
   ],
-  "source_video_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/videos/scene_1/video5_obj_armchair_bslhmj_0.mp4",
+  "source_video_path": "videos/scene_1/video5_obj_armchair_bslhmj_0.mp4",
   "copied_video_path": "video5_obj_armchair_bslhmj_0.mp4",
   "images": [
     {
       "index": 1,
-      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/position_2/orientation_0.png",
+      "source_path": "images/position_2/orientation_0.png",
       "copied_path": "image_01_orientation_0.png"
     }
   ]

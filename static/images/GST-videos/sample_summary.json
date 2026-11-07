@@ -18,9 +18,9 @@
     "image_count": 4
   },
   {
-    "folder": "static/images/GST-videos/03_Global_Structure_Understanding_Trajection_Selection",
-    "task": "Global_Structure_Understanding_Trajection_Selection",
-    "uid": "scene1_Trajection_Selection_traject_9_4",
+    "folder": "static/images/GST-videos/03_Global_Structure_Understanding_Trajectory_Selection",
+    "task": "Global_Structure_Understanding_Trajectory_Selection",
+    "uid": "scene1_Trajectory_Selection_traject_9_4",
     "scene": "scene_1",
     "answer": "B",
     "video": "sub_trajectory_4.mp4",

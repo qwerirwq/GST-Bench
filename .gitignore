@@ -1,0 +1,14 @@
+.DS_Store
+.idea/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.cache/
+/outputs/
+/checkpoints/
+/data/
+sensitive_info_result.txt

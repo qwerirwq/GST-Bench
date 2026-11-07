@@ -10,27 +10,27 @@
     "\nC.",
     "\nD."
   ],
-  "source_video_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/videos/scene_1/sub_trajectory_4.mp4",
+  "source_video_path": "videos/scene_1/sub_trajectory_4.mp4",
   "copied_video_path": "sub_trajectory_4.mp4",
   "images": [
     {
       "index": 1,
-      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/trajectory_8/sub_trajectory_9.png",
+      "source_path": "images/trajectory_8/sub_trajectory_9.png",
       "copied_path": "image_01_sub_trajectory_9.png"
     },
     {
       "index": 2,
-      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/trajectory_9/sub_trajectory_4.png",
+      "source_path": "images/trajectory_9/sub_trajectory_4.png",
       "copied_path": "image_02_sub_trajectory_4.png"
     },
     {
       "index": 3,
-      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/trajectory_4/sub_trajectory_6.png",
+      "source_path": "images/trajectory_4/sub_trajectory_6.png",
       "copied_path": "image_03_sub_trajectory_6.png"
     },
     {
       "index": 4,
-      "source_path": "/Users/bytedance/Desktop/小论文图片/GST-bench/images/trajectory_9/sub_trajectory_8.png",
+      "source_path": "images/trajectory_9/sub_trajectory_8.png",
       "copied_path": "image_04_sub_trajectory_8.png"
     }
   ]

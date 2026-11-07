@@ -62,7 +62,6 @@ families:
 
 - [Qwen3-VL](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
 - [InternVL3.5](https://huggingface.co/OpenGVLab/InternVL3_5-8B)
-- [LLaVA-NeXT-Video](https://huggingface.co/llava-hf/LLaVA-NeXT-Video-7B-hf)
 - [LLaVA-OneVision 1.5](https://huggingface.co/lmms-lab/LLaVA-OneVision-1.5-8B-Instruct)
 - [NVILA](https://github.com/NVlabs/VILA)
 - [Cosmos-Reason2](https://huggingface.co/nvidia/Cosmos-Reason2-8B)
@@ -98,6 +97,11 @@ hf download qwerirwq/GST-Bench \
   --local-dir <PATH_TO_GST_BENCH_DATA>
 ```
 
+The downloaded directory contains 12 task-specific JSON files alongside the
+`images/` and `videos/` directories. Pass this directory to `--eval_dir` for
+both inference and evaluation. Media paths in the JSON files are relative to
+this directory and are resolved automatically by the data loader.
+
 ### Run all tasks
 
 Run inference from the GST-Bench repository root:
@@ -106,7 +110,6 @@ Run inference from the GST-Bench repository root:
 python3 inference.py \
   --model_name Qwen/Qwen3-VL-8B-Instruct \
   --model_series Qwen3vl \
-  --model_path ./checkpoints/Qwen3-VL-8B-Instruct-SFT \
   --eval_dir <PATH_TO_GST_BENCH_DATA> \
   --save_dir <PATH_TO_INFERENCE_OUTPUT>
 ```
@@ -125,6 +128,11 @@ Omit `--model_path` to load the checkpoint identified by `--model_name` from
 the configured model cache. Use `--tasks` to run only selected tasks, and run
 `python3 inference.py --help` to view all available options.
 
+To evaluate your own checkpoint, additionally pass
+`--model_path <PATH_TO_MODEL_CHECKPOINT>`. The `robobrain2.5` entry is an
+engine alias and requires this argument to identify the actual RoboBrain
+checkpoint.
+
 ### Supported model arguments
 
 Use one of the following `--model_name` and `--model_series` combinations:
@@ -139,7 +147,6 @@ Use one of the following `--model_name` and `--model_series` combinations:
 | `OpenGVLab/InternVL3_5-4B` | `Internvl` |
 | `OpenGVLab/InternVL3_5-8B` | `Internvl` |
 | `OpenGVLab/InternVL3_5-38B` | `Internvl` |
-| `llava-hf/LLaVA-NeXT-Video-7B-hf` | `LLaVA-NeXT-Video` |
 | `lmms-lab/LLaVA-OneVision-1.5-4B-Instruct` | `LLaVA-OneVision` |
 | `lmms-lab/LLaVA-OneVision-1.5-8B-Instruct` | `LLaVA-OneVision` |
 | `Efficient-Large-Model/NVILA-8B` | `NVILA` |
@@ -171,19 +178,28 @@ Run all task metrics from the GST-Bench repository root:
 ```bash
 bash evaluation/evaluate.sh \
   --model_name Qwen3-VL-8B-Instruct \
-  --output_dir <PATH_TO_INFERENCE_OUTPUT>/Qwen3-VL-8B-Instruct/results
+  --output_dir <PATH_TO_INFERENCE_OUTPUT>/Qwen3-VL-8B-Instruct/results \
+  --eval_dir <PATH_TO_GST_BENCH_DATA>
 ```
 
 `<PATH_TO_INFERENCE_OUTPUT>` is the same root directory passed to
 `inference.py --save_dir`. The evaluation `--output_dir` must point to the
 model's `results` directory within that output root.
 
+Pass the same benchmark data directory used for inference to `--eval_dir`.
+The evaluators compare result indices against the complete task data and
+print the `i_th` (zero-based index) and UID of every missing prediction.
+Missing-result warnings indicate an incomplete evaluation: scores are still
+computed from the available records, so resume inference before reporting
+benchmark scores.
+
 To run one metric directly:
 
 ```bash
 python3 evaluation/Object_Localization_Egocentric_Direction_visual.py \
   --model_name Qwen3-VL-8B-Instruct \
-  --output_dir <PATH_TO_INFERENCE_OUTPUT>/Qwen3-VL-8B-Instruct/results
+  --output_dir <PATH_TO_INFERENCE_OUTPUT>/Qwen3-VL-8B-Instruct/results \
+  --eval_dir <PATH_TO_GST_BENCH_DATA>
 ```
 
 > **Note:** Model predictions may not strictly follow the answer format defined
