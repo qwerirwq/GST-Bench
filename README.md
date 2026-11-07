@@ -27,14 +27,13 @@ Wei Li<sup>1,†</sup>
 <a href="https://arxiv.org/pdf/2608.05747"><img src="https://img.shields.io/badge/arXiv-2608.05747-b31b1b.svg?logo=arxiv&amp;logoColor=white" alt="arXiv"></a>
 </p>
 
-<p align="left"><sub>The dataset and evaluation code are expected to be released in October 2026.</sub></p>
-
 </div>
 
 ![GST-Bench overview](static/images/GST-images/intro.png)
 
 ## 🔔 News
 
+- 🔥 **[2026-11]** We released the [GST-Bench evaluation dataset](https://huggingface.co/datasets/qwerirwq/GST-Bench).
 - 🔥 **[2026-09]** We updated the evaluation results for GPT-6 Astra, GPT-5.5, Gemini-3.1-Pro, Seed2.1-Pro, and RynnBrain1.1-9B.
 - 🔥 **[2026-08]** We released our [paper](https://arxiv.org/pdf/2608.05747).
 
